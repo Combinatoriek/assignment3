@@ -20,9 +20,7 @@
 \section*{11}
 All positive integers below 1000000 have 6 digits: $[000001, 999999]$. Exactly one digit needs to be 9, so we have 6 possible positions to place it.
 
-After that we are left with 5 places, that need to add up to 4, so the sum of digits is 13. There are $\begin{pmatrix}
-	5 - 1 + 4 \\ 4
-\end{pmatrix} = 70$ possibilities.
+After that we are left with 5 places, that need to add up to 4, so the sum of digits is 13. There are $\binom{5 - 1 + 4}{4}$ possibilities.
 
 In total there are $6 * 70 = 420$ numbers that fulfill the requirements.
 
