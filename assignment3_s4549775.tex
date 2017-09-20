@@ -71,6 +71,9 @@ We can look at the 7 different bills as labeled objects, and the purses as 3 unl
 
 	In total he can divide the fruit in $126 * 10 = 1260$ ways.
 	\item %b
+	A client can choose any of the 16 flavors for each of the 3 scoops, so there are $16^3 = 4096$ different possibilities. Next he can choose 2 out of the 7 sauces, but he cannot reuse them. There are $7 * 6 = \binom{7}{2} = 42$ combinations. Choosing 2 out of the 5 toppings without repetition follows the same principle as the sauce. There are $\binom{5}{2} = 10$ possibilities.
+
+	All the steps can be combined in any way, so there are $4096 * 42 * 10 = 1720320$ different medium sundaes, which the clients can make.
 	\item %c
 \end{enumerate}
 
