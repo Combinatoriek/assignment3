@@ -38,9 +38,13 @@ We put distinguishable objects (playing cards) into labeled boxes (players hands
 \section*{14}
 \begin{enumerate}[a]
 	\item %a
-	If boxes and balls are labeled than the order of balls does matter. There are $P(5, 3) = 60$ possibilities to put 3 out of 5 labeled balls into 3 labeled boxes. For the remaining two balls, we have 3 choices each.
+	The possible distributions of balls can be either one box with 3 balls and two boxes with 1 ball, or one box with 1 ball and two boxes with 2 balls.
 
-	The total number of possible distributions is $60 * 3^2 = 540$.
+	In the first case we need to choose the bigger box $\binom{3}{1} = 3$, then choose which 3 balls to put into it $\binom{5}{3} = 10$, then choose which balls go into which remaining box $\binom{2}{1} \binom{1}{1} = 2$. There are $3 * 10 * 2 = 60$ ways to do the first case.
+
+	In the second case we need to choose the smaller box $\binom{3}{1} = 3$, then choose which ball goes into it $\binom{5}{1} = 5$, and finally fill the remaining boxes $\binom{4}{2} \binom{2}{2} = 6 * 1 = 6$. The second case can be done in $3 * 5 * 6 = 90$ ways.
+
+	In total there are $60 + 90 = 150$ ways to divide the balls.
 
 	\item %b
 	Since the boxes are unlabeled the order we put the first 3 balls into them does not matter, we just need to choose which of the 5 balls we use for it: $\binom{5}{3} = 10$ possibilities.
