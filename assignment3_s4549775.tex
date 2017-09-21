@@ -38,8 +38,12 @@ We put distinguishable objects (playing cards) into labeled boxes (players hands
 	\begin{enumerate}
 		\item 1, 2, 3, 4
 
-		We can place $b_1$ on any of the four shelves: $1 b_1, 2, 3, 4$, $1, 2 b_1, 3, 4$, \dots.
+		We can place $b_1$ on any of the four shelves: $1 b_1, 2, 3, 4$, or $1, 2 b_1, 3, 4$, or \dots.
+		\item
+		We can place the second book in one of 5 possible positions: $1 b_2 b_1, 2, 3, 4$, or $1 b_1 b_2, 2, 3, 4$, or $1 b_1, 2 b_2, 3, 4$, or \dots.
 	\end{enumerate}
+
+	For each new book we place, one new spot is generated for the next book. In total there are $\dfrac{15!}{3!}$ ways to place the books.
 \end{enumerate}
 
 \section*{14}
