@@ -86,9 +86,11 @@ In total we can divide the bills in $63 * 301 = 18963$ ways.
 	\item %c
 	$A = \{0, 1, 2, 3, 4, 5\} = 6, B = \{a, b, c, d, e, f\}$
 
-	First we map one element from the domain A to each of the elements in the codomain B, so that the function is surjective. There are $P(|A|, |B|) =  P(6,5) = 720$ ways to do this. Functions map each element of the domain to something, so we need to choose one of 5 elements in the codomain to be mapped to by the last element in the domain.
+	Every element from the domain $A$ needs to be mapped onto one element from the codomain $B$, but $|A| > |B|$, so according to the pigeonhole principle, there needs to be element on the codomain that is mapped to by 2 elements from the domain. There cannot be more than one such element, because the function needs to be surjective.
 
-	In total there are $720 * 5 = 3600$ surjective functions of type $A \rightarrow B$.
+	There are $C(6, 2) = 15$ partitions with 4 sets of length 1 and 1 set of length 2. Now we need to choose an order for the codomain. $|B| = 5$, so there are $P(5, 5) = 5! = 120$ permutations.
+
+	In total there are $15 * 120 = 1800$ surjective functions of type $A \rightarrow B$.
 \end{enumerate}
 
 \end{document}
