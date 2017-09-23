@@ -72,9 +72,11 @@ We put distinguishable objects (playing cards) into labeled boxes (players hands
 \end{enumerate}
 
 \section*{15}
-$(x_1 + x_3 + \dots + x_m)^n\\
-= (x_1 + x_1 + \dots) \dots (x_m  + x _m + \dots)\\
-= \sum_{y_1 + \dots + y_m = n} (c * x_1^{y_1} \dots x_m^{y_m})$
+$\begin{aligned}
+	(x_1 + x_3 + \dots + x_m)^n
+	&= (x_1 + x_1 + \dots) \dots (x_m  + x _m + \dots)\\
+	&= \sum_{y_1 + \dots + y_m = n} (c * x_1^{y_1} \dots x_m^{y_m})
+\end{aligned}$
 
 So we need to find the number of solutions to $y_1 + \dots + y_m = n$, which is $\binom{m - 1 + n}{n}$.
 
